@@ -1,0 +1,68 @@
+/* pages/findCar/index.wxss */
+.textBox{
+  display: flex;
+  margin-top: 480rpx;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  font-weight: bold;
+}
+
+.qr{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 160rpx;
+}
+
+.code{
+  width: 100rpx;
+  height: 100rpx;
+  background-color: rgb(236, 236, 236);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.code image{
+  width: 64rpx;
+  height: 64rpx;
+}
+.num{
+  width: 100rpx;
+  height: 100rpx;
+  background-color: rgb(236, 236, 236);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.num image{
+  width: 64rpx;
+  height: 64rpx;
+}
+.page-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.weui-cells__title{
+  font-size: 40rpx;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 1rpx solid #1989fa;
+}
+
+.weui-cell{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.weui-cell button{
+  margin-top: 20rpx;
+}

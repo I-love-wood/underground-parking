@@ -3,5 +3,18 @@
   "projectname": "lzh_002_lzhf",
   "setting": {
     "compileHotReLoad": true
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "方便找车",
+          "pathName": "pages/findCar/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
   }
 }

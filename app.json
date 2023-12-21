@@ -2,10 +2,12 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/map/index"
+    "pages/map/index",
+    "pages/findCar/index",
+    "pages/finalPage/index"
   ],
   "window": {
-    "navigationStyle":"custom"
+    "navigationStyle": "custom"
   },
   "rendererOptions": {
     "skyline": {
@@ -20,6 +22,7 @@
   "lazyCodeLoading": "requiredComponents",
   "usingComponents": {
     "van-popup": "@vant/weapp/popup/index",
-    "van-nav-bar": "@vant/weapp/nav-bar/index"
+    "van-nav-bar": "@vant/weapp/nav-bar/index",
+    "van-divider": "@vant/weapp/divider/index"
   }
 }

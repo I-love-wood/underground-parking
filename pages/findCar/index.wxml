@@ -1,0 +1,27 @@
+<!--pages/findCar/index.wxml-->
+<van-nav-bar title="路在何方" title-class="titleClass"/>
+<view class="container">
+  <view class="textBox">
+    <span>为了方便您可以更好地找到自己的爱车</span>
+    <span>请扫描前方二维码或输入找车码</span>
+  </view>
+  <view class="qr">
+    <view class="code" bindtap="scanQrcode">
+      <image src="../../public/images/input_qrcode.png" mode=""/>
+    </view>
+    <view class="num" bindtap="inputQrnum">
+      <image src="../../public/images/input_num.png" mode=""/>
+    </view>
+  </view>
+  <van-popup show="{{ show }}" bind:close="onClose" round custom-style="width:600rpx;height: 200rpx">
+    <view class="page-section">
+      <view class="weui-cells__title">请输入找车码：{{inputValue}}</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <input class="weui-input"  maxlength="10" bindinput="bindKeyInput" placeholder="这里输入哦"/>
+          <button size="mini" type="primary" bindtap="goFinalPage">确认</button>
+        </view>
+      </view>
+    </view>
+  </van-popup>
+</view>

@@ -32,5 +32,6 @@
     "tabIndent": "auto",
     "tabSize": 2
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "simulatorPluginLibVersion": {}
 }
