@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@tarojs/cli": "^3.6.21",
+    "@vant/weapp": "^1.11.2"
+  }
+}

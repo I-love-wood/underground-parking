@@ -1,0 +1,19 @@
+<van-nav-bar title="首页" title-class="titleClass"/>
+<view class="container">
+  <swiper class="swiper-box" indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{background}}" wx:key="*this">
+      <swiper-item class="swiper-item">
+        <image class="swiper-img" src="../../public/images/1.png" mode="aspectFill"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="text-tag">
+    <text>基于微信小程序的</text>
+    <text>智慧停车场导航系统</text>
+  </view>
+  <view class="choose-btn">
+    <button bindtap="clickFind">找车位</button>
+    <button bindtap="clickFindCar">找车</button>
+  </view>
+</view>

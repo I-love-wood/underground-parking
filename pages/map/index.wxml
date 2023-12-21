@@ -1,0 +1,8 @@
+<!--pages/map/index.wxml-->
+<view class="container">
+  <view>
+    <image src="" mode=""/>
+    <!-- 底部导航栏 -->
+    <view></view>
+  </view>
+</view>
