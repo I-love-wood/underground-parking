@@ -4,11 +4,12 @@ Page({
     focus: false,
     inputValue: '',
     show: false,
+    isFindCarSet: null
   },
   //点击确定跳转最后一个页面
   goFinalPage(){
     wx.redirectTo({
-      url: '../finalPage/index',
+      url: '../page1/page1',
     })
   },
   scanQrcode() {
@@ -19,6 +20,11 @@ Page({
     })
     wx.redirectTo({
       url: '../finalPage/index',
+    })
+  },
+  onClickLeft(){
+    wx.redirectTo({
+      url: '../index/index',
     })
   },
   onClose: function(){
@@ -64,7 +70,18 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    let pages = getCurrentPages(); //页面对象
+    let prevpage = pages[pages.length - 2]; //上一个页面对象
+    console.log(prevpage.route)
+    if(prevpage.route == "pages/map/index"){
+      this.setData({
+        isFindCarSet:true
+      })
+    }else{
+      this.setData({
+        isFindCarSet:false
+      })
+    }
   },
 
   /**

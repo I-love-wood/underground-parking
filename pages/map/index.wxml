@@ -1,8 +1,13 @@
-<!--pages/map/index.wxml-->
-<view class="container">
+<van-nav-bar title="路在何方" left-text="返回" left-arrow title-class="titleClass"/>
+<view>
   <view>
-    <image src="" mode=""/>
-    <!-- 底部导航栏 -->
-    <view></view>
+  <image class="img" src="../../public/images/map.png"></image>
+  <text class="wenben">您可以参考以上路线寻找车位</text>
+  <view class="container">
+     <button class="btn1" type="warn" plain>遇到问题?</button>
+     <button class="btn2" plain bind:tap="btn2">车已停好</button>
+   </view>
   </view>
 </view>
+
+

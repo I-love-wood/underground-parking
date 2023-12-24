@@ -8,6 +8,13 @@
     "miniprogram": {
       "list": [
         {
+          "name": "地图",
+          "pathName": "pages/map/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
           "name": "方便找车",
           "pathName": "pages/findCar/index",
           "query": "",

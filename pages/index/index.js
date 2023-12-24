@@ -31,6 +31,11 @@ Component({
         }
       })
     },
+    clickFindCar(){
+      wx.navigateTo({
+        url: '../findCar/index',
+      })
+    },
     onClose (){
       // this.setData({ show: false });
     }

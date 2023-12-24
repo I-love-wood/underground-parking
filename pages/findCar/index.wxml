@@ -1,9 +1,14 @@
 <!--pages/findCar/index.wxml-->
-<van-nav-bar title="路在何方" title-class="titleClass"/>
+<van-nav-bar title="路在何方" left-text="返回" left-arrow title-class="titleClass" bind:click-left="onClickLeft"/>
 <view class="container">
-  <view class="textBox">
+  <view class="textBox" wx:if="{{isFindCarSet}}">
     <span>为了方便您可以更好地找到自己的爱车</span>
     <span>请扫描前方二维码或输入找车码</span>
+  </view>
+  <view class="textBox" wx:else="{{isFindCarSet}}">
+    <span>为了给您规划寻找爱车的路线</span>
+    <span>您可以扫描附近的二维码</span>
+    <span>或填写附近车位的寻车码</span>
   </view>
   <view class="qr">
     <view class="code" bindtap="scanQrcode">
